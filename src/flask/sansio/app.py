@@ -32,7 +32,6 @@ from .scaffold import _endpoint_from_view_func
 from .scaffold import find_package
 from .scaffold import Scaffold
 from .scaffold import setupmethod
-
 if t.TYPE_CHECKING:  # pragma: no cover
     from werkzeug.wrappers import Response as BaseResponse
 
@@ -489,7 +488,6 @@ class App(Scaffold):
         .. versionadded:: 0.8
         """
         from ..coverage_tracker import track_coverage
-
         root_path = self.root_path
         if instance_relative:
             track_coverage('make_config_1')

@@ -1,45 +1,67 @@
-# Flask
+# Report for Assignment 1
 
-Flask is a lightweight [WSGI][] web application framework. It is designed
-to make getting started quick and easy, with the ability to scale up to
-complex applications. It began as a simple wrapper around [Werkzeug][]
-and [Jinja][], and has become one of the most popular Python web
-application frameworks.
+## Project chosen
 
-Flask offers suggestions, but doesn't enforce any dependencies or
-project layout. It is up to the developer to choose the tools and
-libraries they want to use. There are many extensions provided by the
-community that make adding new functionality easy.
+Name: <TODO>
 
-[WSGI]: https://wsgi.readthedocs.io/
-[Werkzeug]: https://werkzeug.palletsprojects.com/
-[Jinja]: https://jinja.palletsprojects.com/
+URL: <TODO>
 
+Number of lines of code and the tool used to count it: <TODO>
 
-## A Simple Example
+Programming language: <TODO>
 
-```python
-# save this as app.py
-from flask import Flask
+## Coverage measurement
 
-app = Flask(__name__)
+### Existing tool
 
-@app.route("/")
-def hello():
-    return "Hello, World!"
-```
+<Inform the name of the existing tool that was executed and how it was executed>
 
-```
-$ flask run
-  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-```
+<Show the coverage results provided by the existing tool with a screenshot>
 
+### Your own coverage tool
 
-## Donate
+<The following is supposed to be repeated for each group member>
 
-The Pallets organization develops and supports Flask and the libraries
-it uses. In order to grow the community of contributors and users, and
-allow the maintainers to devote more time to the projects, [please
-donate today][].
+<Group member name>
 
-[please donate today]: https://palletsprojects.com/donate
+<Function 1 name>
+
+<Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>
+
+<Provide a screenshot of the coverage results output by the instrumentation>
+
+<Function 2 name>
+
+<Provide the same kind of information provided for Function 1>
+
+## Coverage improvement
+
+### Individual tests
+
+<The following is supposed to be repeated for each group member>
+
+<Group member name>
+
+<Test 1>
+
+<Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced test>
+
+<Provide a screenshot of the old coverage results (the same as you already showed above)>
+
+<Provide a screenshot of the new coverage results>
+
+<State the coverage improvement with a number and elaborate on why the coverage is improved>
+
+<Test 2>
+
+<Provide the same kind of information provided for Test 1>
+
+### Overall
+
+<Provide a screenshot of the old coverage results by running an existing tool (the same as you already showed above)>
+
+<Provide a screenshot of the new coverage results by running the existing tool using all test modifications made by the group>
+
+## Statement of individual contributions
+
+<Write what each group member did>

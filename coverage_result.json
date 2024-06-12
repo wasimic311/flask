@@ -2,6 +2,6 @@
     "show_server_banner_1": false,
     "show_server_banner_2": false,
     "show_server_banner_3": false,
-    "make_config_1": false,
+    "make_config_1": true,
     "make_config_2": true
 }
