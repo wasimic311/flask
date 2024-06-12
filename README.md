@@ -14,7 +14,8 @@ Programming language: Python
 
 ### Existing tool
 
-The existing tool used for measuring coverage is coverage.py. It was executed using the following command: coverage run -m pytest
+The existing tool used for measuring coverage is coverage.py. It was executed using the following command: 
+```coverage run -m pytest```
 
 
 <Show the coverage results provided by the existing tool with a screenshot>
@@ -29,7 +30,6 @@ Group member name: Wasim Albarazi
 
 Function 1: 'show_server_banner'
 
-<Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>
 Commit made: https://github.com/pallets/flask/commit/f7549030d395a498cd3e5a9756647d0994f73cfd
 
 <Provide a screenshot of the coverage results output by the instrumentation>
