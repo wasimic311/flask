@@ -16,15 +16,18 @@ Programming language: Python
 
 The existing tool used for measuring coverage is coverage.py. It was executed using the following command: coverage run -m pytest
 
+
 <Show the coverage results provided by the existing tool with a screenshot>
+
+![Coverage.py tool](./images/Coverage.PNG)
 
 ### Your own coverage tool
 
 <The following is supposed to be repeated for each group member>
 
-<Group member name: Wasim Albarazi>
+Group member name: Wasim Albarazi
 
-<Function 1: 'show_server_banner'>
+Function 1: 'show_server_banner'
 
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>
 Commit made: https://github.com/pallets/flask/commit/f7549030d395a498cd3e5a9756647d0994f73cfd
@@ -34,9 +37,16 @@ Commit made: https://github.com/pallets/flask/commit/f7549030d395a498cd3e5a97566
 ![JSON Dumb file for the results](./images/jsonDumbShow.PNG)
 ![The coverage before writing a test](./images/showBefore.PNG)
 
-<Function 2 name>
 
-<Provide the same kind of information provided for Function 1>
+
+Function 2: 'make_config'
+
+Commit made: https://github.com/pallets/flask/commit/d498fae3aaac40c0b050ae7c1fcda63351977bb9
+
+<Provide a screenshot of the coverage results output by the instrumentation>
+
+![JSON Dumb file for the results](./images/jsonDumbMake.PNG)
+![The coverage before writing a test](./images/makeBefore.PNG)
 
 ## Coverage improvement
 
