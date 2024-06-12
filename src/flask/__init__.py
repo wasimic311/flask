@@ -43,7 +43,6 @@ from .wrappers import Request as Request
 from .wrappers import Response as Response
 from .coverage_tracker import track_coverage, branch_coverage
 
-
 def __getattr__(name: str) -> t.Any:
     if name == "__version__":
         import importlib.metadata
