@@ -2,19 +2,19 @@
 
 ## Project chosen
 
-Name: <TODO>
+Name: Flask
 
-URL: <TODO>
+URL: https://github.com/pallets/flask
 
-Number of lines of code and the tool used to count it: <TODO>
+Number of lines of code and the tool used to count it: 782430 counted using Lizard
 
-Programming language: <TODO>
+Programming language: Python
 
 ## Coverage measurement
 
 ### Existing tool
 
-<Inform the name of the existing tool that was executed and how it was executed>
+The existing tool used for measuring coverage is coverage.py. It was executed using the following command: coverage run -m pytest
 
 <Show the coverage results provided by the existing tool with a screenshot>
 
@@ -22,13 +22,17 @@ Programming language: <TODO>
 
 <The following is supposed to be repeated for each group member>
 
-<Group member name>
+<Group member name: Wasim Albarazi>
 
-<Function 1 name>
+<Function 1: 'show_server_banner'>
 
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>
+Commit made: https://github.com/pallets/flask/commit/f7549030d395a498cd3e5a9756647d0994f73cfd
 
 <Provide a screenshot of the coverage results output by the instrumentation>
+
+![JSON Dumb file for the results](./images/jsonDumbShow.PNG)
+![The coverage before writing a test](./images/showBefore.PNG)
 
 <Function 2 name>
 
