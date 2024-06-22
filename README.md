@@ -61,20 +61,20 @@ Group member name: Alexandr Costei
 Test 1: 'create_url_adapter'
 
 
-<Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced test>
+
 Commit made: https://github.com/wasimic311/flask/commit/510783b87887defc464210f6a2b30c539acc1ce8
 
 
 
-<Provide a screenshot of the old coverage results (the same as you already showed above)>
+
 ![The coverage before writing a test](./images/create_url_before.png)
 
 
-<Provide a screenshot of the new coverage results>
+
 ![The coverage after writing a test](./images/create_url_after.png)
 
 
-<State the coverage improvement with a number and elaborate on why the coverage is improved>
+
 The coverage was improved by 64%, because the tests now cover all the branches in the create_url_adapter function, including scenarios for requests with and without subdomains and handling various configurations.
 
 Test 2: 'AppContext.Pop'
@@ -82,14 +82,14 @@ Test 2: 'AppContext.Pop'
 Commit made: https://github.com/wasimic311/flask/commit/b048625880ba532b8e503c6c8d65ccc9e761f576
 
 
-<Provide a screenshot of the old coverage results (the same as you already showed above)>
+
 ![The coverage before writing a test](./images/appcontext_before.png)
 
 
-<Provide a screenshot of the new coverage results>
+
 ![The coverage after writing a test](./images/appcontext_after.png)
 
-The coverage was improved by 25%%, because the tests now cover all branches in the AppContext.pop method, including scenarios for handling exceptions and context mismatches.
+The coverage was improved by 25%, because the tests now cover all branches in the AppContext.pop method, including scenarios for handling exceptions and context mismatches.
 
 ### Overall
 
