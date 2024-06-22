@@ -1,7 +1,12 @@
 {
-    "create_url_adapter_1": true,
-    "create_url_adapter_2": true,
-    "create_url_adapter_3": true,
-    "create_url_adapter_4": true,
-    "create_url_adapter_5": true
+    "create_url_adapter_1": false,
+    "create_url_adapter_2": false,
+    "create_url_adapter_3": false,
+    "create_url_adapter_4": false,
+    "create_url_adapter_5": false,
+    "pop_1": false,
+    "pop_2": false,
+    "pop_3": false,
+    "pop_4": false,
+    "pop_5": false
 }
