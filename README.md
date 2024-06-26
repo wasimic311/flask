@@ -64,11 +64,11 @@ Commit made: [Commit for test_show_server_banner](https://github.com/pallets/fla
 
 Old:
 
-![The coverage before writing a test for make_config](./images/makeBefore.PNG)
+![The coverage before writing a test for test_show_server_banner](./images/showBefore.PNG)
 
 New:
 
-![The coverage after writing a test for make_config](./images/makeAfter.PNG)
+![The coverage after writing a test for test_show_server_banner](./images/showAfter.PNG)
 
 The coverage improved by 25%, from 69% to 94%.
 
