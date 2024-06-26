@@ -488,9 +488,14 @@ class App(Scaffold):
 
         .. versionadded:: 0.8
         """
+        from ..coverage_tracker import track_coverage
+
         root_path = self.root_path
         if instance_relative:
+            track_coverage('make_config_1')
             root_path = self.instance_path
+        else:    
+            track_coverage('make_config_2')
         defaults = dict(self.default_config)
         defaults["DEBUG"] = get_debug_flag()
         return self.config_class(root_path, defaults)
@@ -638,7 +643,7 @@ class App(Scaffold):
             )
 
         if provide_automatic_options is None:
-            if "OPTIONS" not in methods and self.config["PROVIDE_AUTOMATIC_OPTIONS"]:
+            if "OPTIONS" not in methods:
                 provide_automatic_options = True
                 required_methods.add("OPTIONS")
             else:
