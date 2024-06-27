@@ -16,7 +16,7 @@ from werkzeug.exceptions import NotFound
 from werkzeug.http import parse_date
 from werkzeug.routing import BuildError
 from werkzeug.routing import RequestRedirect
-
+from flask.coverage_tracker import track_coverage, branch_coverage
 import flask
 
 require_cpython_gc = pytest.mark.skipif(
