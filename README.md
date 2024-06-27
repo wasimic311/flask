@@ -151,3 +151,6 @@ These additions ensure all code paths are tested.
 ## Statement of individual contributions
 
 Jannes van den Bogert: I was responsible for designing and implementing two tests for the Flask application. The tests targeted two specific functions: get_send_file_max_age and dispatch_request. My contributions were helping in enhancing the test coverage from partial to complete for these functions, achieving a significant increase in overall coverage.
+
+Wasim Albarazi: In our project, I was responsible for designing and implementing tests for two critical functions in our Flask application: show_server_banner and make_config. The tests were organized into two separate files, test_make_config.py and test_show_server_banner.py, each focused on validating the functionality and reliability of their respective functions.
+Additionally, I developed a custom coverage tracking tool named coverage_tracker.py. This tool was instrumental in monitoring the test coverage across our application. It tracks the coverage of the test executions and stores the results in a JSON file called coverage_result.json. This implementation provided us with detailed insights into our test coverage, helping to ensure that we achieved comprehensive testing and improved the overall quality and robustness of our application.
