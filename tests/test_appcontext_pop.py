@@ -7,7 +7,7 @@ from flask.ctx import AppContext
 import json
 from flask import branch_coverage
 
-def save_coverage_to_json(file_path='/Users/alx/Computer Science/SEP/flask/coverage_result.json'):
+def save_coverage_to_json(file_path='coverage_result.json'):
     with open(file_path, 'w') as json_file:
         json.dump(branch_coverage, json_file, indent=4)
 
