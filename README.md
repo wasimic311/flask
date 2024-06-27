@@ -201,9 +201,9 @@ These additions ensure all code paths are tested.
 
 
 Alexandr Costei: During the selection of the functions that had to be tested, I picked 2 functions that did not have 100% branch coverage: "create_url_adapter" and "AppContext.Pop".  In order to create the necessary tests, I have:
-- Analyzed the existing code to identify the branches and edge cases that needed to be tested.
-- Wrote new unit tests to cover these scenarios.
-- Integrated branch tracking to monitor and ensure coverage improvements.
+    - Analyzed the existing code to identify the branches and edge cases that needed to be tested.
+    - Wrote new unit tests to cover these scenarios.
+    - Integrated branch tracking to monitor and ensure coverage improvements.
 
 Jannes van den Bogert: I was responsible for designing and implementing two tests for the Flask application. The tests targeted two specific functions: get_send_file_max_age and dispatch_request. My contributions were helping in enhancing the test coverage from partial to complete for these functions, achieving a significant increase in overall coverage.
 
