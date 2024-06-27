@@ -421,9 +421,12 @@ class Flask(App):
             # If subdomain matching is disabled (the default), use the
             # default subdomain in all cases. This should be the default
             # in Werkzeug but it currently does not have that feature.
+            track_coverage('create_url_adapter_1')
             if not self.subdomain_matching:
+                track_coverage('create_url_adapter_2')
                 subdomain = self.url_map.default_subdomain or None
             else:
+                track_coverage('create_url_adapter_3')
                 subdomain = None
 
             return self.url_map.bind_to_environ(
@@ -434,12 +437,13 @@ class Flask(App):
         # We need at the very least the server name to be set for this
         # to work.
         if self.config["SERVER_NAME"] is not None:
+            track_coverage('create_url_adapter_4')
             return self.url_map.bind(
                 self.config["SERVER_NAME"],
                 script_name=self.config["APPLICATION_ROOT"],
                 url_scheme=self.config["PREFERRED_URL_SCHEME"],
             )
-
+        track_coverage('create_url_adapter_5')
         return None
 
     def raise_routing_exception(self, request: Request) -> t.NoReturn:

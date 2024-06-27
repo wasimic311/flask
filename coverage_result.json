@@ -7,10 +7,20 @@
     "dispatch_request_3": true,
     "dispatch_request_success": true,
     "dispatch_request_error": true,
-    "dispatch_request_not_found": true
+    "dispatch_request_not_found": true,
     "show_server_banner_1": true,
     "show_server_banner_2": true,
     "show_server_banner_3": true,
     "make_config_1": true,
-    "make_config_2": true
+    "make_config_2": true,
+    "create_url_adapter_1": false,
+    "create_url_adapter_2": false,
+    "create_url_adapter_3": false,
+    "create_url_adapter_4": false,
+    "create_url_adapter_5": false,
+    "pop_1": false,
+    "pop_2": false,
+    "pop_3": false,
+    "pop_4": false,
+    "pop_5": false
 }

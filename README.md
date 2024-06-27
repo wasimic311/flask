@@ -66,9 +66,58 @@ Commit made: [Commit for make_config](https://github.com/pallets/flask/commit/d4
 ![The coverage before writing a test](./images/makeBefore.PNG)
 
 
+Group member name: Alexandr Costei
+
+Function 1: 'create_url_adapter'
+
+Commit made: https://github.com/wasimic311/flask/commit/510783b87887defc464210f6a2b30c539acc1ce8
+
+<Provide a screenshot of the coverage results output by the instrumentation>
+
+![JSON Dumb file for the results](./images/coverage_before.png)
+![The coverage before writing a test](./images/create_url_before.png)
+
+
+
+Function 2: 'AppContext.Pop'
+
+Commit made: https://github.com/wasimic311/flask/commit/b048625880ba532b8e503c6c8d65ccc9e761f576
+
+<Provide a screenshot of the coverage results output by the instrumentation>
+
+![JSON Dumb file for the results](./images/coverage_before.png)
+![The coverage before writing a test](./images/appcontext_before.png)
+
 ## Coverage improvement
 
 ### Individual tests
+
+<The following is supposed to be repeated for each group member>
+
+<Group member name>
+Group member name: Alexandr Costei
+
+Test 1: 'create_url_adapter'
+
+Commit made: https://github.com/wasimic311/flask/commit/510783b87887defc464210f6a2b30c539acc1ce8
+
+![The coverage before writing a test](./images/create_url_before.png)
+
+![The coverage after writing a test](./images/create_url_after.png)
+
+The coverage was improved by 64%, because the tests now cover all the branches in the create_url_adapter function, including scenarios for requests with and without subdomains and handling various configurations.
+
+
+Test 2: 'AppContext.Pop'
+
+Commit made: https://github.com/wasimic311/flask/commit/b048625880ba532b8e503c6c8d65ccc9e761f576
+
+![The coverage before writing a test](./images/appcontext_before.png)
+
+![The coverage after writing a test](./images/appcontext_after.png)
+
+The coverage was improved by 25%, because the tests now cover all branches in the AppContext.pop method, including scenarios for handling exceptions and context mismatches.
+
 
 Group member name: Jannes van den Bogert
 
@@ -149,6 +198,12 @@ These additions ensure all code paths are tested.
 ![The overall coverage before writing any tests](./images/New_Total_Coverage.png)
 
 ## Statement of individual contributions
+
+
+Alexandr Costei: During the selection of the functions that had to be tested, I picked 2 functions that did not have 100% branch coverage: "create_url_adapter" and "AppContext.Pop".  In order to create the necessary tests, I have:
+    - Analyzed the existing code to identify the branches and edge cases that needed to be tested.
+    - Wrote new unit tests to cover these scenarios.
+    - Integrated branch tracking to monitor and ensure coverage improvements.
 
 Jannes van den Bogert: I was responsible for designing and implementing two tests for the Flask application. The tests targeted two specific functions: get_send_file_max_age and dispatch_request. My contributions were helping in enhancing the test coverage from partial to complete for these functions, achieving a significant increase in overall coverage.
 

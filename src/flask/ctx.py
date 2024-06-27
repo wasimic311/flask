@@ -13,6 +13,7 @@ from .globals import _cv_app
 from .globals import _cv_request
 from .signals import appcontext_popped
 from .signals import appcontext_pushed
+from .coverage_tracker import track_coverage
 
 if t.TYPE_CHECKING:  # pragma: no cover
     from _typeshed.wsgi import WSGIEnvironment
@@ -257,18 +258,23 @@ class AppContext:
         """Pops the app context."""
         try:
             if len(self._cv_tokens) == 1:
+                track_coverage('pop_1')
+
                 if exc is _sentinel:
+                    track_coverage('pop_2')
                     exc = sys.exc_info()[1]
                 self.app.do_teardown_appcontext(exc)
         finally:
+            track_coverage('pop_3')
             ctx = _cv_app.get()
             _cv_app.reset(self._cv_tokens.pop())
 
         if ctx is not self:
+            track_coverage('pop_4')
             raise AssertionError(
                 f"Popped wrong app context. ({ctx!r} instead of {self!r})"
             )
-
+        track_coverage('pop_5')
         appcontext_popped.send(self.app, _async_wrapper=self.app.ensure_sync)
 
     def __enter__(self) -> AppContext:
