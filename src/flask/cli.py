@@ -745,17 +745,25 @@ def load_dotenv(path: str | os.PathLike[str] | None = None) -> bool:
     return loaded  # True if at least one file was located and loaded.
 
 
+
 def show_server_banner(debug: bool, app_import_path: str | None) -> None:
+    
     """Show extra startup messages the first time the server is run,
     ignoring the reloader.
     """
+
+    from .coverage_tracker import track_coverage
+
     if is_running_from_reloader():
+        track_coverage('show_server_banner_1')
         return
 
     if app_import_path is not None:
+        track_coverage('show_server_banner_2')
         click.echo(f" * Serving Flask app '{app_import_path}'")
 
     if debug is not None:
+        track_coverage('show_server_banner_3')
         click.echo(f" * Debug mode: {'on' if debug else 'off'}")
 
 

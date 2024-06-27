@@ -14,7 +14,7 @@ Programming language: Python
 
 ### Existing tool
 
-The existing tool used for measuring coverage is coverage.py. It was executed using the following command:
+The existing tool used for measuring coverage is coverage.py. It was executed using the following command: 
 
 ```coverage run -m pytest```
 
@@ -28,6 +28,8 @@ Function 1 name: 'get_send_file_max_age'
 
 Commit made: [get_send_file_max_age](https://github.com/pallets/flask/commit/3c984992b97935e17d8f2d42c84128b397cd0e7e)
 
+<Provide a screenshot of the coverage results output by the instrumentation>
+
 ![JSON Dumb file for the results](./images/JsonDumpDisGet.png)
 ![The coverage before writing a test](./images/Old_Get_Send_File_Max.png)
 
@@ -36,8 +38,33 @@ Function 2 name: dispatch_request
 
 Commit made: [Commit for dispatch_request](https://github.com/pallets/flask/commit/3c984992b97935e17d8f2d42c84128b397cd0e7e)
 
+<Provide a screenshot of the coverage results output by the instrumentation>
+
 ![JSON Dumb file for the results](./images/JsonDumpDisGet.png)
 ![The coverage before writing a test](./images/Old_Dispatch.png)
+
+
+Group member name: Wasim Albarazi
+
+Function 1: 'show_server_banner'
+
+Commit made: [Commit for show_server_banner](https://github.com/pallets/flask/commit/f7549030d395a498cd3e5a9756647d0994f73cfd)
+
+<Provide a screenshot of the coverage results output by the instrumentation>
+
+![JSON Dumb file for the results](./images/jsonDumbShow.PNG)
+![The coverage before writing a test](./images/showBefore.PNG)
+
+
+Function 2: 'make_config'
+
+Commit made: [Commit for make_config](https://github.com/pallets/flask/commit/d498fae3aaac40c0b050ae7c1fcda63351977bb9)
+
+<Provide a screenshot of the coverage results output by the instrumentation>
+
+![JSON Dumb file for the results](./images/jsonDumbMake.PNG)
+![The coverage before writing a test](./images/makeBefore.PNG)
+
 
 ## Coverage improvement
 
@@ -55,6 +82,7 @@ Commit made: [Commit for test_make_config.py](https://github.com/pallets/flask/c
 
 The coverage improved by 54%, from 46% to 100%.
 
+
 Test 2 name: test_dispatch_request
 
 Commit made: [Commit for test_make_config.py](https://github.com/pallets/flask/compare/main...wasimic311:flask:dev_test_jannes)
@@ -64,6 +92,55 @@ Commit made: [Commit for test_make_config.py](https://github.com/pallets/flask/c
 ![The coverage after writing a test](./images/New_Dispatch.png)
 
 The coverage improved by 58%, from 42% to 100%.
+
+
+Group member name: Wasim Albarazi
+
+Test 1: test_show_server_banner.py
+
+Commit made: [Commit for test_show_server_banner](https://github.com/pallets/flask/compare/main...wasimic311:flask:development_tests#diff-cfe75c0abbe6324af13dd6b3eaefc51d169788685c2503bd2e480fd02f2e24ae)
+
+Old:
+
+![The coverage before writing a test for test_show_server_banner](./images/showBefore.PNG)
+
+New:
+
+![The coverage after writing a test for test_show_server_banner](./images/showAfter.PNG)
+
+The coverage improved by 25%, from 69% to 94%.
+
+This improvement is due to:
+
+New Test Cases: Added tests for show_server_banner under different conditions, such as with and without reloader and with no import path.
+Branch Coverage: Explicit checks ensure that all branches in the show_server_banner function are covered.
+Coverage Reporting: Added functionality to save coverage data to a JSON file, ensuring comprehensive coverage tracking.
+
+These additions ensure that almost all code paths are executed during testing.
+
+
+Group member name: Wasim Albarazi
+
+Test 1: test_make_config.py
+
+Commit made: [Commit for test_make_config.py](https://github.com/pallets/flask/compare/main...wasimic311:flask:development_tests#diff-94858dbd7f6f8bb4dbeac2b9f2f68a13407f31324fb755bfea914d7695802ff8)
+
+Old:
+
+![The coverage before writing a test for make_config](./images/makeBefore.PNG)
+
+New:
+
+![The coverage after writing a test for make_config](./images/makeAfter.PNG)
+
+The coverage improved by 27%, from 73% to 100%.
+
+This improvement is due to:
+
+New Test Cases: Added tests for make_config under default and instance-relative conditions.
+Branch Coverage: Explicit checks for all branches in make_config.
+
+These additions ensure all code paths are tested.
 
 ### Overall
 
